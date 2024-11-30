@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://delkplk08fjpe"]
+
+[ext_resource type="Script" path="res://scenes/journal.gd" id="1_l6dh6"]
+
+[node name="Journal" type="Node2D"]
+script = ExtResource("1_l6dh6")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1440.0
+offset_bottom = 1080.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Journal Entries
+"
+
+[node name="DynamicDataContainer" type="VBoxContainer" parent="Panel/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Panel/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="Panel/CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="New" type="Button" parent="Panel/CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Add New Entry"

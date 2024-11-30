@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2wwji4juk4ap"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_ndfc4"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ndfc4")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = 1440.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+pivot_offset = Vector2(500, 500)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer"]
+layout_mode = 2
+
+[node name="JournalBtn" type="Button" parent="Panel/CenterContainer/GridContainer"]
+layout_mode = 2
+text = "Journal"
+
+[node name="QuestBtn" type="Button" parent="Panel/CenterContainer/GridContainer"]
+layout_mode = 2
+text = "Quests"
+
+[node name="Back" type="Button" parent="Panel/CenterContainer/GridContainer"]
+layout_mode = 2
+text = "Back"

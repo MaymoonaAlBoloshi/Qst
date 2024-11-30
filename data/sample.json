@@ -1,0 +1,77 @@
+{
+	"journal_entries": [
+		{
+			"date": "2023-10-01",
+			"details": "Today, I set up the initial project in Godot and outlined the core features.",
+			"title": "Started QuestLog Development"
+		},
+		{
+			"date": "2023-10-02",
+			"details": "Created the initial UI designs using retro game-inspired graphics sourced from itch.io.",
+			"title": "Designed UI Mockups"
+		},
+		{
+			"date": "2023-10-03",
+			"details": "Developed the scrollable journal interface with clickable entries.",
+			"title": "Implemented Journal Overview"
+		},
+		{
+			"date": "2024-11-30",
+			"details": "this time",
+			"title": "maybe"
+		},
+		{
+			"date": "2024-11-30",
+			"details": "this is some extra text",
+			"title": "test adding new"
+		}
+	],
+	"quests": [
+		{
+			"desc": "some description here",
+			"priority": 1,
+			"status": "active",
+			"sub_quests": [
+				{
+					"status": "completed",
+					"title": "Set Up Godot Project"
+				},
+				{
+					"status": "completed",
+					"title": "Design UI and Graphics"
+				},
+				{
+					"status": "active",
+					"title": "Implement Journal Feature"
+				},
+				{
+					"status": "pending",
+					"title": "Develop Quest Tracking System"
+				},
+				{
+					"status": "pending",
+					"title": "Add JSON Data Handling"
+				},
+				{
+					"status": "pending",
+					"title": "Test and Debug"
+				}
+			],
+			"title": "Develop QuestLog App"
+		},
+		{
+			"desc": "some description here",
+			"priority": 2,
+			"status": "not_started",
+			"sub_quests": [],
+			"title": "Read JSON Files in Godot"
+		},
+		{
+			"desc": "some text",
+			"priority": 1,
+			"status": "completed",
+			"sub_quests": [],
+			"title": "new one"
+		}
+	]
+}
